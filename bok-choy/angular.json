@@ -150,6 +150,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "preserveSymlinks": true,
             "outputPath": "dist/bok-choy-app",
             "index": "projects/bok-choy-app/src/index.html",
             "main": "projects/bok-choy-app/src/main.ts",

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { BokChoyUiService, LibrarySummary } from './bok-choy-ui.service';
 
 @Component({
   selector: 'lib-bok-choy-ui',
   template: `
-    <p>
+    <p style="color:red;">
       bok-choy-ui works!
     </p>
   `,
@@ -12,20 +11,20 @@ import { BokChoyUiService, LibrarySummary } from './bok-choy-ui.service';
   ]
 })
 export class BokChoyUiComponent {
-  name: string = 'TestX1';
+  // name: string = 'TestX1';
 
-  constructor(private uiService: BokChoyUiService) {}
+  constructor() {}
 
-  GetLibraryName(): string {
-    return this.name;
-  }
+  // GetLibraryName(): string {
+  //   return this.name;
+  // }
 
-  GetLibraryDetails(): string[] {
-    const details = ['test1', 'test2'];
-    return details;
-  };
+  // GetLibraryDetails(): string[] {
+  //   const details = ['test1', 'test2'];
+  //   return details;
+  // };
 
-  GetLibrarySummary(): LibrarySummary {
-    return this.uiService.GetLibrarySummary();
-  }
+  // GetLibrarySummary(): LibrarySummary {
+  //   return this.uiService.GetLibrarySummary();
+  // }
 }

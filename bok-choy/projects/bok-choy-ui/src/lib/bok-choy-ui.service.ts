@@ -8,6 +8,10 @@ export class BokChoyUiService {
 
   constructor(private dateService: BokDateService) {}
 
+  GetLibraryName(): string {
+    return "Bok-Choy UI Lib 1.0";
+  }
+
   GetLibrarySummary(): LibrarySummary {
     const summary = {
       name: 'TestLib',
