@@ -1,0 +1,37 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "bok-choy-ui",
+  "projectType": "library",
+  "sourceRoot": "projects/bok-choy-ui/src",
+  "prefix": "lib",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:ng-packagr",
+      "options": {
+        "project": "projects/bok-choy-ui/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "projects/bok-choy-ui/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "projects/bok-choy-ui/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": [
+        "{workspaceRoot}/dist/bok-choy-ui"
+      ]
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "tsConfig": "projects/bok-choy-ui/tsconfig.spec.json",
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ]
+      }
+    }
+  }
+}
