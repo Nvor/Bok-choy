@@ -15,6 +15,9 @@ export class BokChoyUiComponent {
 
   constructor() {}
 
+  ngOnInit() {
+    console.log('ui lib comp initialized 3')
+  }
   // GetLibraryName(): string {
   //   return this.name;
   // }
